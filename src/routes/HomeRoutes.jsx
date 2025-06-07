@@ -5,6 +5,8 @@ import SignUpPage from "../pages/SignUpPage/SignUpPage.jsx";
 import LoginPage from "../pages/LoginPage/LoginPage.jsx";
 import HomeContent from "../components/HomeContent/HomeContent.jsx";
 import JobPage from "../pages/JobPage/JobPage.jsx";
+import RecruiterSignUpPage from "../pages/SignUpPage/SignUp.recruiter.jsx";
+import RecruiterLoginPage from "../pages/LoginPage/RecruiterLoginPage.jsx"
 
 export default function HomeRoutes() {
     return (
@@ -19,6 +21,8 @@ export default function HomeRoutes() {
                 {/* Standalone pages */}
                 <Route path="/signup" element={<SignUpPage />} />
                 <Route path="/login" element={<LoginPage />} />
+                <Route path="/recruiter/signup" element={<RecruiterSignUpPage />} />
+                <Route path="/recruiter/login" element={ <RecruiterLoginPage  /> } />
             </Routes>
         </Router>
     );
